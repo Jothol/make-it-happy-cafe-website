@@ -23,7 +23,8 @@ export default function Home() {
         <h1 className="text-4xl font-bold tracking-tight">A café built on inclusion.</h1>
         <p className="text-lg text-neutral-700">
           We’re opening our first location soon, staffed by adults with special needs.
-          Sign up to hear when doors open, view our menu, and learn how to support the mission.
+          Sign up to hear when doors open, view our menu, and learn how to support the mission. This website
+          was built by my favorite son, who is incredibly talented and generous for his unpaid time setting this up.
         </p>
 
         <div className="mt-10 space-y-2 text-sm text-neutral-600">
