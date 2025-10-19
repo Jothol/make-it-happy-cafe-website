@@ -2,39 +2,37 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-20">
-      <header className="mb-10">
-        <div className="py-6">
+    <main className="min-h-dvh flex justify-center px-4">
+      <section className="text-center">
+        <div className="p-6">
           <Image
             src="/images/make-it-happy-cafe-logo.png"
             alt="Make It Happy Café logo"
             priority
-            // Set a fixed rendered width; keep aspect by letting height auto
-            style={{ width: 200, height: "auto" }}
-            // Help the browser pick the right size across breakpoints
-            sizes="(max-width: 640px) 160px, 200px"
-            width="0"
-            height="0"
+            width={400}
+            height={150}
+            className="mx-auto h-auto w-full max-w-[400px]"
+            sizes="(max-width: 480px) 90vw, (max-width: 768px) 60vw, 400px"
           />
         </div>
-      </header>
 
-      <section className="space-y-6">
         <h1 className="text-4xl font-bold tracking-tight">A café built on inclusion.</h1>
-        <p className="text-lg text-neutral-700">
-          We’re opening our first location soon, staffed by adults with special needs.
-          Sign up to hear when doors open, view our menu, and learn how to support the mission. This website
-          was built by my favorite son, who is incredibly talented and generous for his unpaid time setting this up.
-        </p>
 
-        <div className="mt-10 space-y-2 text-sm text-neutral-600">
-          <p><strong>First location:</strong> Your City, ST — Target launch: Winter 2025</p>
+        <div className="mt-4 mx-auto max-w-prose space-y-4">
+          <p className="text-lg text-neutral-700">
+            A gourmet cafe staffed by adults with special needs.
+            More information will be available soon.
+          </p>
+
+          <p className="text-sm text-neutral-600">
+            <strong>First location:</strong> Oconomowoc, WI — Target launch: Spring 2026
+          </p>
         </div>
-      </section>
 
-      <footer className="mt-20 border-t pt-6 text-sm text-neutral-600">
-        <p>© {new Date().getFullYear()} Make It Happy Café. All rights reserved.</p>
-      </footer>
+        <footer className="mt-12 pt-6 border-t text-sm text-neutral-600">
+          © {new Date().getFullYear()} Make It Happy Café. All rights reserved.
+        </footer>
+      </section>
     </main>
   );
 }
