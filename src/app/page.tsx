@@ -16,7 +16,7 @@ export default function Home() {
           />
         </div>
 
-        <h1 className="text-3xl font-bold tracking-tight">Careers for IDD.</h1>
+        <h1 className="text-3xl font-bold tracking-tight">A Meaningful Career.</h1>
 
         <div className="mt-4 mx-auto max-w-prose space-y-4 bg-white/30 rounded-2xl p-4 sm:p-6">
           <p className="text-lg text-neutral-700">
