@@ -2,9 +2,9 @@ import "./globals.css";
 import BrickBackground from "@/components/BrickBackground";
 
 export const metadata = {
-  title: "Make It Happy Café — Inclusive Work, Great Coffee",
+  title: "Make It Happy Café — Simply Good Ingredients",
   description:
-    "A café staffed by adults with special needs. First location opening soon — join our newsletter for updates.",
+    "A café staffed by adults with special needs. First location opening in Oconomowoc soon.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
